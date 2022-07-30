@@ -17,7 +17,11 @@
   });
 </script>
 
-<h1>Welcome to SvelteKit</h1>
+<svelte:head>
+  <title>SK TRPC</title>
+</svelte:head>
+
+<h1>Welcome to TRPC SK</h1>
 
 {#await $hello}
   <p>Loading...</p>
