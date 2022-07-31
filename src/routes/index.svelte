@@ -10,8 +10,8 @@
 
   const { form, errors } = createForm<PostValidator>({
     extend: validator({ schema: postValidator }),
-    onSubmit: data => {
-      mutate(data);
+    onSubmit: async data => {
+      await mutate(data);
       posts.refetch();
     }
   });
